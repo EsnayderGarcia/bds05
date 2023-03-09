@@ -1,12 +1,10 @@
 package com.devsuperior.movieflix.resources.exceptions;
 
-import java.io.Serial;
 import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
 
 public class ValidationError extends StandardError implements Serializable {
-	@Serial
 	private static final long serialVersionUID = 1L;
 	
 	private final List<FieldMessage> errors = new ArrayList<>();
